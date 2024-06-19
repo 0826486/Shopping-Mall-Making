@@ -21,6 +21,7 @@ header {
     font-size: 32px;
     font-weight: bold;
     color: #ffccc8;
+    cursor: pointer;
 }
 
 .menubar-container {
@@ -63,11 +64,52 @@ header {
 .mac {
     width: 280px;
     aspect-ratio: 1/1;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 7px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .mac:hover {
     transform: translateY(-5px); /* 호버시 이미지를 위로 5px 이동 */
+}
+
+.talk {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+
+.line {
+    width: 82%;
+    height: 1.5px;
+    background-color: #ffdad6; /* 선의 색상 */
+    margin: 20px auto;
+    margin-top: 360px;
+}
+
+.like-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; /* 이미지 사이의 간격 설정 */
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* 중앙 정렬을 위한 최대 너비 설정 */
+}
+
+.shop {
+    margin: 0; /* 이미지 컨테이너의 여백을 제거 */
+    padding: 0; /* 이미지 컨테이너의 패딩을 제거 */
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* 최대 너비를 100%로 설정하여 반응형 유지 */
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 7px;
 }
