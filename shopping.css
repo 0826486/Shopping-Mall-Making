@@ -49,7 +49,7 @@ header {
 .text {
     text-align: center;
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
     font-weight: bold;
 }
@@ -66,4 +66,8 @@ header {
     margin-top: 30px;
     border-radius: 7px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mac:hover {
+    transform: translateY(-5px); /* 호버시 이미지를 위로 5px 이동 */
 }
