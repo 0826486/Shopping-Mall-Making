@@ -27,7 +27,6 @@ header {
 .menubar-container {
     background-color: #ffccc8;
     padding: 10px 0;
-    clear: both; /* float 해제 */
 }
 
 .list {
@@ -49,7 +48,7 @@ header {
 
 .text {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 20px;
     color: #333;
     font-weight: bold;
@@ -57,12 +56,12 @@ header {
 
 .kos {
     float: left;
-    margin-left: 160px;
+    margin-left: 87px;
     margin-top: 10px;
 }
 
 .mac {
-    width: 280px;
+    width: 275px;
     aspect-ratio: 1/1;
     margin-top: 20px;
     border-radius: 7px;
@@ -73,7 +72,49 @@ header {
     transform: translateY(-5px); /* 호버시 이미지를 위로 5px 이동 */
 }
 
+.line {
+    width: 82%;
+    height: 1.5px;
+    background-color: #ffdad6;
+    margin: 20px auto;
+    margin-top: 360px;
+}
+
+
 .talk {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.like-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; 
+}
+
+.shop {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.Good {
     text-align: center;
     margin-top: 25px;
     font-size: 22px;
@@ -81,35 +122,33 @@ header {
     font-weight: bold;
 }
 
-.line {
-    width: 82%;
-    height: 1.5px;
-    background-color: #ffdad6; /* 선의 색상 */
-    margin: 20px auto;
-    margin-top: 360px;
-}
-
-.like-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px; /* 이미지 사이의 간격 설정 */
+.container {
+    display: flex;
     justify-content: center;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px; /* 중앙 정렬을 위한 최대 너비 설정 */
+    gap: 20px; /* 이미지 사이의 간격을 조정합니다 */
 }
 
-.shop {
-    margin: 0; /* 이미지 컨테이너의 여백을 제거 */
-    padding: 0; /* 이미지 컨테이너의 패딩을 제거 */
+.MD {
+    border-radius: 12px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+    margin-bottom: 80px;
 }
 
-.top {
-    width: 100%;
-    height: auto;
-    max-width: 100%; /* 최대 너비를 100%로 설정하여 반응형 유지 */
-    aspect-ratio: 16 / 9;
+.MD img {
+    width: 300px; /* 원하는 너비로 설정 */
+    height: 300px; /* 원하는 높이로 설정 */
     object-fit: cover;
-    border-radius: 7px;
+}
+
+.make:hover {
+    transform: translateY(-4px);
+}
+
+.long {
+    width: 53%;
+    height: 1.5px;
+    background-color: #ffdad6;
+    margin: 20px auto;
+    margin-top: 30px;
 }
