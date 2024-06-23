@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(255, 114, 114, 0.1);
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.shopping {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffccc8;
+    cursor: pointer;
+}
+
+.menubar-container {
+    background-color: #ffccc8;
+    padding: 10px 0;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.list li {
+    margin: 0 15px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.list li:hover {
+    color: #ff74ca;
+}
+
+.list li a {
+    color: inherit; /* 부모 요소의 색상을 상속 */
+    text-decoration: none;
+}
+
+.list li a:hover {
+    color: #ff74ca; /* 호버 시 분홍색 */
+}
+
+.menubar-container li a:visited {
+    color: inherit; /* 방문한 링크 색상도 기본 색상과 동일하게 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+}
