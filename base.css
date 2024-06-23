@@ -52,10 +52,69 @@ header {
 }
 
 .list li a:hover {
-    color: #ff74ca; /* 호버 시 분홍색 */
+    color: #ff74ca;
 }
 
 .menubar-container li a:visited {
     color: inherit; /* 방문한 링크 색상도 기본 색상과 동일하게 설정 */
-    text-decoration: none; /* 밑줄 제거 */
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 8px;
+}
+
+.search-input {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 8px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    background-color: #ffccc8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px; /* 헤더와 사진 목록 간의 간격 추가 */
+}
+
+.cu {
+    width: 200px; /* 박스 너비 */
+    height: 200px; /* 박스 높이 */
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.cu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shion {
+    width: 100%; /* 이미지 너비 */
+    height: 100%; /* 이미지 높이 */
+    object-fit: cover; /* 이미지 비율 유지 */
 }
