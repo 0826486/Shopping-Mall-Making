@@ -125,7 +125,7 @@ header {
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* 이미지 사이의 간격을 조정합니다 */
+    gap: 20px;
 }
 
 .MD {
@@ -151,4 +151,21 @@ header {
     background-color: #ffdad6;
     margin: 20px auto;
     margin-top: 30px;
+}
+
+.list li {
+    margin: 0 15px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.list li a {
+    text-decoration: none; /* 링크 효과 제거 */
+    color: inherit; /* 부모 요소의 색상 상속 */
+}
+
+.list li:hover {
+    color: #ff74ca;
 }
