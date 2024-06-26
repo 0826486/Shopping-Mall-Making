@@ -163,7 +163,7 @@ header {
 
 .list li a {
     text-decoration: none; /* 링크 효과 제거 */
-    color: inherit; /* 부모 요소의 색상 상속 */
+    color: inherit;
 }
 
 .list li:hover {
