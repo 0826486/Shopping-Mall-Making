@@ -49,17 +49,12 @@ header {
 }
 
 .list li a {
-    color: inherit; /* 부모 요소의 색상을 상속 */
+    color: inherit;
     text-decoration: none;
 }
 
 .list li a:hover {
     color: #ff74ca;
-}
-
-.menubar-container li a:visited {
-    color: inherit; /* 방문한 링크 색상도 기본 색상과 동일하게 설정 */
-    text-decoration: none;
 }
 
 .search-container {
@@ -92,31 +87,34 @@ header {
     justify-content: center;
 }
 
-.base-container {
+.lip-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 이미지 넓이 조정 */
+    gap: 40px;
     max-width: 1000px;
     margin: 20px auto;
+    margin-top: 50px;
+    margin-bottom: 90px;
 }
 
-.cu {
+.lip {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-    position: relative; /* 위치를 상대적으로 변경하여 이미지가 컨테이너를 벗어나지 않게 함 */
+    position: relative;
 }
 
-.cu:hover {
+.lip:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.shion {
+.lip img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 8px; /* 이미지에도 둥근 모서리 적용 */
+    border-radius: 8px;
+    max-width: 100%; /* 이미지가 부모 요소를 넘어가지 않도록 최대 너비 설정 */
 }
