@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(255, 114, 114, 0.1);
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.shopping {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffccc8;
+    cursor: pointer;
+}
+
+.menubar-container {
+    background-color: #ffccc8;
+    padding: 10px 0;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.list li {
+    margin: 0 15px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.list li:hover {
+    color: #ff74ca;
+}
+
+.text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 8px;
+}
+
+.search-input {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 8px 15px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    background-color: #ffccc8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
