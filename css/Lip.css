@@ -2,6 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -46,12 +48,18 @@ header {
     color: #ff74ca;
 }
 
-.text {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #333;
-    font-weight: bold;
+.list li a {
+    color: inherit; /* 부모 요소의 색상을 상속 */
+    text-decoration: none;
+}
+
+.list li a:hover {
+    color: #ff74ca;
+}
+
+.menubar-container li a:visited {
+    color: inherit; /* 방문한 링크 색상도 기본 색상과 동일하게 설정 */
+    text-decoration: none;
 }
 
 .search-container {
@@ -82,4 +90,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.base-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.cu {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* 위치를 상대적으로 변경하여 이미지가 컨테이너를 벗어나지 않게 함 */
+}
+
+.cu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shion {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px; /* 이미지에도 둥근 모서리 적용 */
 }
