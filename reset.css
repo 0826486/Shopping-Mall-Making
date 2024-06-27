@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #ffccc8;
+}
+
 body, html, ul, li {
     margin: 0;
     padding: 0;
