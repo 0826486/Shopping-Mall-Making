@@ -80,7 +80,6 @@ header {
     margin-top: 360px;
 }
 
-
 .talk {
     text-align: center;
     margin-top: 25px;
@@ -136,8 +135,8 @@ header {
 }
 
 .MD img {
-    width: 300px; /* 원하는 너비로 설정 */
-    height: 300px; /* 원하는 높이로 설정 */
+    width: 200px; /* 너비를 줄임 */
+    height: 200px; /* 높이를 줄임 */
     object-fit: cover;
 }
 
